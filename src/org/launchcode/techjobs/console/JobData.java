@@ -32,7 +32,7 @@ public class JobData {
         ArrayList<HashMap<String, String>> jobs = new ArrayList<>();
         for (HashMap<String, String> row : allJobs) {
             for (Map.Entry<String, String> data : row.entrySet()) {
-                if (data.getValue().toLowerCase(Locale.ROOT).contains(searchWord.toLowerCase(Locale.ROOT))) {
+                if (data.getValue().toLowerCase(Locale.ROOT).contains(searchWord)) {
                     jobs.add(row);
                     break;
                 }
